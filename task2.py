@@ -11,10 +11,13 @@ def reverse_sequence(n):
     if n < 1:
         print()
     else:
-        s = input()
+        number = input('Enter number:\t')
         reverse_sequence(n-1)
-        print(s, end=' ')
+        print(number, end=' ')
 
 
-n = int(input('\nEnter the number of sequence :\t'))
-reverse_sequence(n)
+try:
+    n = int(input('\nEnter the number of sequence :\t'))
+    reverse_sequence(n)
+except ValueError:
+    print('\nIncorrect data!You must enter number!')
