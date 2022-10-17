@@ -13,7 +13,7 @@ def reverse_sequence(n):
     else:
         s = input()
         reverse_sequence(n-1)
-        print(s, end='\t')
+        print(s, end=' ')
 
 
 n = int(input('\nEnter the number of sequence :\t'))
