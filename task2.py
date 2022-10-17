@@ -3,3 +3,18 @@
 
 # Input: 2 -> 3 4
 # Output: 4 3
+
+# sequence_of_numbers = [i for i in range(
+#     int(input('\nEnter the number of sequence :\t')))]
+
+def reverse_sequence(n):
+    if n < 1:
+        print()
+    else:
+        s = input()
+        reverse_sequence(n-1)
+        print(s, end='\t')
+
+
+n = int(input('\nEnter the number of sequence :\t'))
+reverse_sequence(n)
